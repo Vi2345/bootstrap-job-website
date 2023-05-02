@@ -1,42 +1,53 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+*
+{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     border: none;
     outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
+:root{
+    --white:#ffffff;
+}
+
 .navbar-brand{
     font-size: 2rem;
     font-family: 'Dancing Script', cursive;
-    color: red;
+    color: #ff0000;
 }
 
 .nav-link{
-color: rgb(10, 10, 94);
+color: #0a0a5e;
 }
 .nav-link:hover{
-    color: red;
+    color: #ff0000;
     transition: 0.3s;
 }
 .nav-item{
-    color: rgb(7,7, 78);
+    color: #07074e;
     font-weight: 500;
     padding-left: 35px;
 }
 .btn0{
     height:52px;
     width:130px;
-    color: white;
+    color:var(--white);
     cursor: pointer;
     transition: all 0.4s;
-    background-color: orangered;
+    background-color: #ff4500;
 }
 .btn0:hover{
-    background-color: rgb(214, 11 ,11);
+    background-color: #d60b0b;
     transition: all 0.4s;
     
 }
@@ -44,86 +55,86 @@ color: rgb(10, 10, 94);
 .btn1{
     height:52px;
     width:130px;
-    border: 2px solid rgb(248, 20, 20);
+    border: 2px solid #f81414;
     background-color: transparent;
-    color: rgb(248, 20, 20); 
+    color: #f81414; 
     transition :all 0.4s;
     cursor: pointer;
 }
 .btn1:hover{
-    background-color: rgb(214, 11, 11);
+    background-color: #d60b0b;
     transition: all 0.4s;
-    color: white;
+    color: var(--white);
     
 }
-.main{
+.Home{
     background-image: url("img/main1copy.jpg");
     background-size: cover;
     min-height: 95vh;
     width: 100%;
 }
-.main h1{
+.Home h1{
     font-size: 4rem;
-    font-weight: 800;
-    color:rgb(7, 7, 78);
+    font-weight:800;
+    color:#07074e;
 
 }
 
-.main input{
-    height: 71px;
-    width: 70%;
+.Home input{
+    height:71px;
+    width:70%;
     padding: 15px;
 }
 
 .btn2{
     height: 70px;
     width: 25%;
-    background-color: rgb(243, 73,73);
-    color: white;
+    background-color: #f34949;
+    color:var(--white);
     transition: all 0.4s;
     cursor: pointer;
     margin-left:-4px;
 }
 
 .btn2:hover{
-    background: rgb(214, 11, 11);
+    background: #d60b0b;
     transition: all 0.4s;
 }
 
 .lead{
-    color:red;
+    color:#ff0000;
 }
 .packages h1{
     font-size: 3.5rem;
-    color:rgb(7,7, 7);
+    color:#070707;
 }
 
 .packages .card:hover{
-    color: red;
+    color: #ff0000;
     cursor: pointer;
     transition: all 0.3s;
--webkit-box-shadow: 2px 2px 22px -11px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 2px 22px -11px rgba(0,0,0,0.75);
-box-shadow: 2px 2px 22px -11px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 2px 22px -11px #000000bf;
+-moz-box-shadow: 2px 2px 22px -11px #000000bf;
+box-shadow: 2px 2px 22px -11px #000000bf;
 }
 
 .btn3{
     height: 70px;
     width: 70%;
-    border: 1px solid rgb(130, 130, 231);
+    border: 1px solid #8282e7;
     background: transparent;
     border-radius: 5px;
     transition: all 0.4s;
-    color:rgb(130, 130, 231);
+    color:#8282e7;
 }
 .btn3:hover{
-    background: rgb(102, 102, 231);
-    color: white;
+    background: #6666e7;
+    color: var(--white);
     transition: all 0.4s;
 }
 
 .resume{
-    background-image: linear-gradient(rgba(4, 11, 75, 0.719), rgba(4, 26, 100, 0.73)),url("img/woman.jpg");
+    background-image: linear-gradient(#040b4bb7, #041a64ba),url("img/woman.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -137,20 +148,20 @@ box-shadow: 2px 2px 22px -11px rgba(0,0,0,0.75);
 
 .Job h1{
     font-size: 3rem;
-    color:rgb(7,7, 78);
+    color:#07074e;
 }
 
 .btn4{
     height: 60px;
     width: 30%;
-    background-color: rgb(243, 73, 73);
-    color: white;
+    background-color: #f34949;
+    color: var(--white);
     transition: all 0.4s;
 }
 
 .btn4:hover{
-    background-color: rgb(214, 11, 11);
-    color: white;
+    background-color: #d60b0b;
+    color: var(--white);
     transition: all 0.4s;
 }
 .Apply{
@@ -162,14 +173,14 @@ box-shadow: 2px 2px 22px -11px rgba(0,0,0,0.75);
 }
 
 .Apply .card{
-    background-color: rgba(4, 26, 100, 0.801);
-    color: white;
+    background-color: #041a64cc;
+    color: var(--white);
 }
 
 .image{
     width:100px;
     height:100px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 50%;
     display: inline-block;
 }
@@ -191,22 +202,22 @@ box-shadow: 2px 2px 22px -11px rgba(0,0,0,0.75);
 .btn5{
     height: 60px;
     width: 30%;
-    background-color:rgb(243, 73, 73);
+    background-color:#f34949;
     cursor: pointer;
-    color: white;
+    color:var(--white);
     transition: all 0.4s;
     border-radius: 5px;
 
 }
 
 .btn5:hover{
-    background-color: rgb(214, 11 ,11);
+    background-color: #d60b0b;
     transition: all 0.4s;
 }
 
 .footer{
     background: #121626;
-    color: white;
+    color: var(--white);
     margin-top: 6%;
 }
 .footer p{
@@ -239,7 +250,7 @@ box-shadow: 2px 2px 22px -11px rgba(0,0,0,0.75);
     padding-right:12px;
     border-top: 1px solid #ff2962;
     background-color: #ff2962;
-    color: white;
+    color: var(--white);
     margin-top: 40px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
